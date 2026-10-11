@@ -9,6 +9,6 @@ export const INVALID_USERNAME = {
 };
 
 export const SEARCH_USERS = {
-  username: 'Admin'
+  username: 'admin123'
 
 };
