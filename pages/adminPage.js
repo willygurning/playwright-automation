@@ -71,7 +71,6 @@ export class AdminPage{
         }
     
     async validateAmountSearchUser(){
-            await this.amountSearchUser.waitFor({state:'visible'});
             const totalData = await this.amountSearchUser.count();
             return totalData;
     }
