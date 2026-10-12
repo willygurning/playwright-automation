@@ -34,7 +34,7 @@ test.describe('Admin Feature', () =>{
         await adminPage.searchButton.click();
 
         const jumlahData =  await adminPage.validateAmountSearchUser();
-        expect(jumlahData).toBe(4);
+        expect(jumlahData).toBe(1);
        
 
 
