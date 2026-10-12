@@ -51,6 +51,10 @@ export class AdminPage{
             .locator('.oxd-table')
             .locator('.oxd-table-body')
             .locator('.oxd-table-card');
+
+        this.tableSearchUser = page
+            .locator('.oxd-table')
+            .locator('.oxd-table-body');
     }
 
     //methods=====================================================>>>
@@ -71,6 +75,7 @@ export class AdminPage{
         }
     
     async validateAmountSearchUser(){
+            await this.tableSearchUser.waitFor({state:'visible'});
             const totalData = await this.amountSearchUser.count();
             return totalData;
     }
